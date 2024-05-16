@@ -13,6 +13,11 @@
         {
             await Navigation.PushAsync(new Tiendas_Online());
         }
+
+        private async void cmdIngresar1_Clicked(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new Videojuegos());
+        }
     }
 
 }

@@ -33,7 +33,7 @@
                         FontSize="Small"
                         HorizontalOptions="Center" />
                     <Label 
-                     Text="Presiona  el botón apra empezar empezar!"
+                     Text="Presiona en Tiendas o Productos para empezar!"
                      FontSize="Small"
                      HorizontalOptions="Center" />
                 </VerticalStackLayout>
@@ -41,12 +41,20 @@
 
             <Button 
                 x:Name="cmdIngresar"
-                Text="Ingresar"
+                Text="Ingresar a Tiendas"
                 BackgroundColor="Green"
                 TextColor="White"
                 FontAttributes="Bold"
                 Clicked="cmdIngresar_Clicked"
                 CornerRadius="5" />
+            <Button 
+             x:Name="cmdIngresar1"
+             Text="Ingresar Videojuegos"
+             BackgroundColor="Green"
+             TextColor="White"
+             FontAttributes="Bold"
+             Clicked="cmdIngresar1_Clicked"
+             CornerRadius="5" />
         </VerticalStackLayout>
     </ScrollView>
 
