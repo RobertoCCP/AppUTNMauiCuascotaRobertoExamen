@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AppUTNMauiCuascotaRoberto.Tiendas_Online"
+             Title="Tiendas_Online">
+    <ContentPage.Background>
+        <LinearGradientBrush StartPoint="0,0" EndPoint="1,1">
+            <GradientStop Color="#FFFFFF" Offset="0" />
+            <GradientStop Color="#FFD269" Offset="1" />
+        </LinearGradientBrush>
+    </ContentPage.Background>
+
+    <ContentPage.ToolbarItems>
+        <ToolbarItem
+         Text="Salir"
+         Clicked="OnBackButtonClicked"
+         Order="Primary"
+         Priority="0" />
+        <ToolbarItem
+         Text="Videojuegos"
+         Clicked="OnNextPageButtonClicked"
+         Order="Primary"
+         Priority="1" />
+    </ContentPage.ToolbarItems>
+
+    <ScrollView>
+        <VerticalStackLayout
+            Spacing="20"
+            Padding="30"
+            VerticalOptions="Center"
+            HorizontalOptions="FillAndExpand">
+            <Label 
+                Text="Bienvenido a las Tiendas Online!"
+                FontSize="Medium"
+                FontAttributes="Bold"
+                TextColor="#34495e"
+                HorizontalOptions="Center" />
+
+            <Frame 
+                CornerRadius="10"
+                Padding="20"
+                Margin="0,0,0,10"
+                HorizontalOptions="Fill"
+                BackgroundColor="White">
+                <VerticalStackLayout Spacing="15">
+                    <Label Text="Id: Tienda_Online" FontSize="Small" />
+                    <Entry x:Name="txtId" Placeholder="Introduce el ID de tineda online" />
+
+                    <Label Text="Tienda_Online" FontSize="Small" />
+                    <Entry x:Name="txtTienda_Online" Placeholder="Descripción de la Tienda Online" />
+                </VerticalStackLayout>
+            </Frame>
+
+            <Button 
+                x:Name="cmdCreate" 
+                Text="Insertar" 
+                Clicked="cmdCreate_Clicked"
+                BackgroundColor="#2ecc71"
+                TextColor="White"
+                CornerRadius="5"
+                Margin="0,10,0,0" />
+
+            <Button 
+                x:Name="cmdLeer" 
+                Text="Leer" 
+                Clicked="cmdLeer_Clicked"
+                BackgroundColor="#3498db"
+                TextColor="White"
+                CornerRadius="5"
+                Margin="0,5,0,0" />
+
+            <Button 
+                x:Name="cmdUpdate" 
+                Text="Actualizar" 
+                Clicked="cmdUpdate_Clicked"
+                BackgroundColor="#f39c12"
+                TextColor="White"
+                CornerRadius="5"
+                Margin="0,5,0,0" />
+
+            <Button 
+                x:Name="cmdDelete" 
+                Text="Eliminar" 
+                Clicked="cmdDelete_Clicked"
+                BackgroundColor="#e74c3c"
+                TextColor="White"
+                CornerRadius="5"
+                Margin="0,5,0,0" />
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>
